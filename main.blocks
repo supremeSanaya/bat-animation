@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="/Q:UBCfZSWhQ9P%V}4Oa">Player</variable><variable type="KIND_SpriteKind" id="DD6Q).Q2*iR~svhc+u=f">Projectile</variable><variable type="KIND_SpriteKind" id="H]wu9d8Z1hA/]SnX9gy2">Food</variable><variable type="KIND_SpriteKind" id="_SOZ:GSspHv4cb|{FXE=">Enemy</variable><variable type="BLOCKLY_TILESET_TYPE" id="r^zfmCY~!)VOazg,TdG_">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable id="B5dJ{Co^+*#uAjlpj}{I">mySprite</variable><variable id="QT/4+UMp=eJIZcL`t?M,">mySprite2</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="B5dJ{Co^+*#uAjlpj}{I">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . f f f . . . . . . . . f f f 
+. f f c c . . . . . . f c b b c 
+f f c c . . . . . . f c b b c . 
+f c f c . . . . . . f b c c c . 
+f f f c c . c c . f c b b c c . 
+f f c 3 c c 3 c c f b c b b c . 
+f f b 3 b c 3 b c f b c c b c . 
+. c 1 f b b 1 f c b b c c c . . 
+. c f 1 b b f 1 b c c c c . . . 
+c b b b b b b b b b c c . . . . 
+c b c b b b c b b b b f . . . . 
+f b 1 f f f 1 b b b b f c . . . 
+f b b b b b b b b b b f c c . . 
+. f b b b b b b b b c f . . . . 
+. . f b b b b b b c f . . . . . 
+. . . f f f f f f f . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`1000100003060604060606060306060606060406060606060606060606060605060606060606060606040605060606060603060604060603060606060604060606060604060606060605060606060606050606060605060606060606060606060606060606060606060606060306060604060606060606040606060606060606060606030606060606050606060506060606060606030606060606060606060406060506060606060606060306060606060606060606060406060606060606060606060406060606060605060606060506030606030605060606060606040606060606060606060606030606060606060606060606060406060606060506060306040603`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.castle.saplingOak,sprites.castle.shrub,sprites.castle.saplingPine,sprites.castle.tileGrass2],
+            TileScale.Sixteen
+        )</field><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">7</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="B5dJ{Co^+*#uAjlpj}{I">mySprite</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">100</field></shadow></value><next><block type="camerafollow"><value name="sprite"><block type="variables_get"><field name="VAR" id="B5dJ{Co^+*#uAjlpj}{I">mySprite</field></block></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
