@@ -339,3 +339,6 @@ tiles.setTilemap(tiles.createTilemap(
 scene.setBackgroundColor(7)
 controller.moveSprite(mySprite, 100, 100)
 scene.cameraFollowSprite(mySprite)
+forever(function () {
+    music.playMelody("G F E E F G F F ", 120)
+})
